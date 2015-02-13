@@ -34,9 +34,23 @@ module.exports.routes = {
     view: 'ourmattress'
   },
 
+  '/comfortlevels': {
+    view: 'comfortlevels'
+  },
+
+  '/whychooseus': {
+    view: 'whychooseus'
+  },
+
+  '/greenandlocal': {
+    view: 'greenandlocal'
+  },
+
   '/healthandcooling': {
     view: 'healthandcooling'
   },
+
+
 
 
   // Custom routes here...

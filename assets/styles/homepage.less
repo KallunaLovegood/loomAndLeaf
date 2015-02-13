@@ -1,0 +1,89 @@
+// HOME PAGE
+.home {
+  // NAVIGATION
+  .navigation {
+    .navigation();
+  }
+
+  // HERO SECTION
+  .hero {
+    .hero();
+    background-color: #000000;
+    .container {
+      max-width: 1200px;
+      width: 80%;
+      margin: 0 auto;
+      .call-to-action {
+        max-width: 500px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, .8);
+        width: 50%;
+        position: relative;
+        top: 200px;
+        left: 50px;
+        h1 {
+          .h1(@graytext);
+          float: left;
+          padding-bottom: 10px;
+        }
+        p {
+          margin: 20px 0;
+          color: @graytext;
+        }
+        .button {
+          margin: 10px 0;
+          a {
+            .transition (opacity);
+            color: @white;
+            padding: 10px 50px;
+            margin-top: 20px;
+            background-color: @lightblue;
+            font-weight: 600;
+            &:hover {
+              opacity: .6;
+              .transition (opacity);
+            }
+          }
+        }
+      }
+    }
+  } //hero
+
+
+  // REVIEW SECTION
+  .review {
+    .container {
+      max-width: 1200px;
+      width: 50%;
+      margin: 0 auto;
+      span {
+        width: 80px;
+        height: 80px;
+        display: block;
+        background-color: #000000;
+        margin: 30px auto;
+      }
+      p {
+        text-align: center;
+      }
+      h3 {
+        .h3 (@graytext);
+        text-align: center;
+        margin: 20px 0;
+      }
+      .star-icon {
+        height: 30px;
+        width: 200px;
+        margin: 0 auto;
+        background-color: #000000;
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
