@@ -1,0 +1,240 @@
+// OUR MATTRESS
+.ourmattress {
+  
+  // NAVIGATION
+  .navigation {
+    .navigation ();
+  }
+
+  // HERO SECTION
+  .hero {
+    .hero();
+    background-color: @bkgdgray;
+    .container {
+      max-width: 1200px;
+      width: 80%;
+      margin: 0 auto;
+      padding: 70px 0;
+      h1 {
+        .h1 (@graytext);
+        text-align: center;
+      }
+      .left {
+        background-color: #000000;
+        display: block;
+        float: left;
+        width: 50%;
+        margin: 100px 0 0;
+      }
+      .right {
+        margin: 60px 0 0;
+        width: 50%;
+        float: right;
+        .point {
+          float: left;
+          padding-left: 20px;
+          margin-bottom: 30px;
+          span {
+            height: 20px;
+            width: 20px;
+            background-color: #000000;
+            display: block;
+            float: left;
+            margin-right: 10px;
+          }
+          h3 {
+            .h3 (@graytext);
+            padding-bottom: 5px;
+          }
+          p {
+            padding-left: 30px;
+          }
+        }
+      }
+    } //container
+  } //hero
+
+
+  // CALL TO ACTION
+  .call-to-action {
+    width: 100%;
+    background-color: #000000;
+    h2 {
+      .h2 (@white);
+      text-align: center;
+      padding-top: 100px;
+    }
+    p {
+      color: @white;
+      text-align: center;
+    }
+    .button-row {
+      .clearfix ();
+      width: 310px;
+      margin: 0 auto;
+      padding-bottom: 100px;
+      .button {
+        margin: 30px auto;
+        text-align: center;
+        &.left {
+          display: block;
+          float: left;
+          a {
+            .transition (opacity);
+            color: @white;
+            padding: 10px 30px;
+            margin-top: 50px;
+            background-color: #2b4156;
+            font-weight: 600;
+            &:hover {
+              opacity: .6;
+              .transition (opacity);
+            }
+          }
+        }
+        &.right {
+          display: block;
+          float: right;
+          a {
+            .transition (opacity);
+            color: @white;
+            padding: 10px 30px;
+            margin-top: 50px;
+            background-color: @lightblue;
+            font-weight: 600;
+            &:hover {
+              opacity: .6;
+              .transition (opacity);
+            }
+          }
+        }
+      }
+    }
+  } //call to action
+
+
+  // 2 MORE POINTS
+  .two-points {
+    .clearfix ();
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 70%;
+      padding: 80px 0;
+      .highermattress-icon {
+        height: 50px;
+        width: 50px;
+        background-color: #000000;
+        display: block;
+        margin: 20px auto;
+      }
+      h2 {
+        .h2 (@graytext);
+        text-align: center;
+      }
+      .point {
+        width: 45%;
+        display: block;
+        margin: 50px 0 100px;
+        &.left {
+          float: left;
+          .american-icon {
+            height: 50px;
+            width: 50px;
+            background-color: #000000;
+            float: left;
+          }
+          .content {
+            margin-left: 70px;
+          }
+        }
+        &.right {
+          float: right;
+          .sleep-icon {
+            height: 50px;
+            width: 50px;
+            background-color: #000000;
+            float: left;
+          }
+          .content {
+            margin-left: 70px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // CHART SECTION
+  .chart {
+    background-color: #000000;
+    .container {
+      max-width: 1200px;
+      width: 80%;
+      margin: 0 auto;
+      h1 {
+        .h1 (@white);
+        padding-top: 80px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        color: @white;
+        padding-bottom: 50px;
+      }
+      table {
+        margin: 0 auto;
+        color: @white;
+        width: 60%;
+        font-size: .8em;
+        padding-bottom: 100px;
+        th {
+          border-bottom: 1px solid #888888;
+          border-right: 1px solid #888888;
+          width: 33%;
+          text-align: center;
+          padding: 10px;
+          &:first-child {
+            text-align: left;
+          }
+          &.yes {
+            background-color: #668fb6;
+            opacity: .4;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // COMPARE SECTION
+  .compare-section {
+    .container {
+      max-width: 1200px;
+      width: 60%;
+      margin: 0 auto;
+      .compare-icon {
+        height: 50px;
+        width: 50px;
+        background-color: #000000;
+        margin: 70px auto 10px;
+        display: block;
+      }
+      h2 {
+        .h2 (@graytext);
+        text-align: center;
+      }
+      p {
+        color: @graytext;
+        text-align: center;
+        padding: 20px 0 100px;
+      }
+    }
+  }
+
+
+
+
+}
