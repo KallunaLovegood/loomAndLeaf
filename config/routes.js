@@ -50,6 +50,10 @@ module.exports.routes = {
     view: 'healthandcooling'
   },
 
+  '/reviews': {
+    view: 'reviews'
+  },
+
 
 
 
