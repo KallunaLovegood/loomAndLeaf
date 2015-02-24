@@ -62,6 +62,10 @@ module.exports.routes = {
     view: 'requestbrochure'
   },
 
+  '/contact': {
+    view: 'contact'
+  },
+
 
 
 
