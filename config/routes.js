@@ -54,6 +54,10 @@ module.exports.routes = {
     view: 'reviews'
   },
 
+  '/ourcompany': {
+    view: 'ourcompany'
+  },
+
 
 
 
