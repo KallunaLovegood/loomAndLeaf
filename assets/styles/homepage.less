@@ -8,7 +8,9 @@
   // HERO SECTION
   .hero {
     .hero();
-    background-color: #000000;
+    .at2x('/images/hero_home.jpg', 650px, 1600px);
+    background-size: 100%;
+    background-repeat: no-repeat;
     .container {
       max-width: 1200px;
       width: 80%;
@@ -53,7 +55,7 @@
     background-color: @white;
     opacity: .77;
     position: relative;
-    top: -54px;
+    top: -51px;
     ul {
       max-width: 1200px;
       width: 80%;
@@ -64,6 +66,7 @@
         text-align: center;
         display: inline-block;
         padding: 15px 0;
+        font-size: .9em;
       }
     }
   }
@@ -103,9 +106,10 @@
       //   margin-bottom: 100px;
       // }
       .company-icons {
-        background-color: #000000;
-        height: 60px;
-        width: 500px;
+        .at2x('/images/img_logos.png', 608px, 50px);
+        // background-repeat: no-repeat;
+        height: 50px;
+        width: 608px;
         margin: 20px auto 100px;
       }
     }
@@ -116,7 +120,9 @@
   // 3-ICONS-SECTION
   .three-icons {
     .clearfix ();
-    background-color: #000000;
+    .at2x('/images/img_home_bkgd.png', 1602px, 630px);
+    background-size: 100%;
+    background-repeat: no-repeat;
     .container {
       max-width: 1200px;
       width: 80%;
@@ -125,12 +131,10 @@
         width: 25%;
         position: relative;
         float: left;
-        padding: 50px 4.16% 100px;
-        .icon {
-          height: 100px;
-          width: 100px;
-          background-color: @graytext;
-          margin: 50px auto;
+        padding: 50px 4.16% 70px;
+        img {
+          display: block;
+          margin: 10px auto 30px;
         }
         h3 {
           .h3 (@white);
@@ -167,25 +171,31 @@
   .two-columns {
     .clearfix ();
     .left {
-      background-color: #000000;
+      // background-color: #000000;
       display: block;
       float: left;
       width: 50%;
-      height: 395px;
+      // height: 395px;
+      // background-repeat: no-repeat;
+      // .at2x('/images/img_home_passionate.png', 802px, 563px);
+      img {
+        float: right;
+        height: 563px;
+        width: 802px;
+      }
     }
     .right {
       width: 50%;
       float: right;
+      display: table;
       .container {
         max-width: 500px;
-        padding: 70px 100px 36px;
+        padding: 140px 100px 36px;
         h2 {
           .h2 (@graytext);
-          // text-align: center;
           padding-bottom: 20px;
         }
         p {
-          // text-align: center;
           color: @graytext;
           line-height: 1.5;
           &.google-title {
@@ -195,7 +205,6 @@
         .star-icon {
           height: 30px;
           width: 200px;
-          background-color: #000000;
         }
       }
     }
