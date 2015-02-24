@@ -58,6 +58,10 @@ module.exports.routes = {
     view: 'ourcompany'
   },
 
+  '/requestbrochure': {
+    view: 'requestbrochure'
+  },
+
 
 
 
