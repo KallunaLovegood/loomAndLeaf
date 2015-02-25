@@ -12,19 +12,22 @@
   // HERO
   .hero {
     .hero ();
-    background-color: @bkgdgray;
+    .at2x('/images/hero_whyus.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     .container {
       max-width: 1200px;
       width: 80%;
       margin: 0 auto;
       padding: 70px 0;
       h1 {
-        .h1 (@graytext);
+        .h1 (@white);
         text-align: center;
       }
       p {
         text-align: center;
         padding: 10px 0;
+        color: @white;
       }
     }
   }
@@ -52,11 +55,19 @@
         float: left;
         padding: 0 4.16%;
         .icon {
-          height: 100px;
-          width: 100px;
-          background-color: @graytext;
-          margin: 10px auto 50px;
+          height: 170px;
+          width: 170px;
+          margin: 10px auto 20px;
           display: block;
+          &.installation {
+            .at2x('/images/icon_whyus_delivery.png', 170px, 170px);
+          }
+          &.forty-five-trial {
+            .at2x('/images/icon_whyus_inhome.png', 170px, 170px);
+          }
+          &.satisfaction {
+            .at2x('/images/icon_whyus_satisfaction.png', 170px, 170px);
+          }
         }
         h3 {
           .h3 (@graytext);
@@ -66,6 +77,8 @@
         p {
           text-align: center;
           color: @graytext;
+          font-size: .85em;
+          line-height: 1.6;
         }
       }
     }
@@ -97,7 +110,8 @@
           padding-bottom: 20px;
         }
         p {
-          // text-align: center;
+          font-size: .85em;
+          line-height: 1.6;
           color: @graytext;
           line-height: 1.5;
           &.google-title {
@@ -117,9 +131,9 @@
       width: 80%;
       margin: 100px auto;
       .briefcase-icon {
-        height: 50px;
-        width: 50px;
-        background-color: #000000;
+        .at2x('/images/icon_whyus_briefcase.png', 64px, 64px);
+        height: 64px;
+        width: 64px;
         margin: 0 auto;
         display: block;
       }
@@ -132,10 +146,8 @@
         text-align: center;
       }
       .business-model {
-        margin: 50px 0 0;
-        height: 340px;
-        width: 100%;
-        background-color: #000000;
+        margin: 50px auto 20px;
+        width: 90%;
         display: block;
       }
       h3 {
@@ -191,8 +203,51 @@
 
 
   // CHART
+  // .chart {
+  //   background-color: #000000;
+  //   .container {
+  //     max-width: 1200px;
+  //     width: 80%;
+  //     margin: 0 auto;
+  //     h1 {
+  //       .h1 (@white);
+  //       padding-top: 80px;
+  //       text-align: center;
+  //     }
+  //     p {
+  //       text-align: center;
+  //       color: @white;
+  //       padding-bottom: 50px;
+  //     }
+  //     table {
+  //       margin: 0 auto;
+  //       color: @white;
+  //       width: 60%;
+  //       font-size: .8em;
+  //       padding-bottom: 100px;
+  //       th {
+  //         border-bottom: 1px solid #888888;
+  //         border-right: 1px solid #888888;
+  //         width: 33%;
+  //         text-align: center;
+  //         padding: 10px;
+  //         &:first-child {
+  //           text-align: left;
+  //         }
+  //         &.yes {
+  //           background-color: #668fb6;
+  //           opacity: .4;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // CHART SECTION
   .chart {
     background-color: #000000;
+    .at2x('/images/img_whyus_chartbkgd.png', auto, auto);
+    background-size: 100%;
+    background-repeat: no-repeat;
     .container {
       max-width: 1200px;
       width: 80%;
@@ -224,7 +279,14 @@
           }
           &.yes {
             background-color: #668fb6;
-            opacity: .4;
+            img {
+              margin: 0 auto;
+            }
+          }
+          &.no {
+            img {
+              margin: 0 auto;
+            }
           }
         }
       }
