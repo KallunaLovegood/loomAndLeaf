@@ -13,8 +13,9 @@
   // HERO SECTION
   .hero {
     .hero ();
+    .at2x('/images/hero_comfort.png');
     .container {
-      padding: 100px;
+      padding: 150px 100px 0;
       max-width: 1200px;
       width: 80%;
       margin: 0 auto;
@@ -73,6 +74,7 @@
         max-width: 1200px;
         width: 80%;
         margin: 0 auto;
+        padding-top: 100px;
         .relaxedfirm {
           display: none;
           h3 {
@@ -153,7 +155,7 @@
 
   // SLEEP POSITIONS
   .sleep-positions {
-    background-color: #000000;
+    .bkgd_stripes ();
     .container {
       max-width: 1200px;
       width: 50%;
@@ -164,9 +166,6 @@
         text-align: center;
       }
       .position-image {
-        background-color: @white;
-        height: 70px;
-        width: 500px;
         display: block;
         margin: 30px auto;
       }
@@ -187,14 +186,16 @@
       width: 50%;
       float: left;
       background-color: @white;
+      height: 448px;
       .container {
-        padding: 100px 50px 100px 0;
+        padding: 70px 50px 100px 0;
         width: 60%;
         float: right;
         .quote-icon {
-          height: 100px;
-          width: 100px;
-          background-color: #000000;
+          .at2x('/images/img_quotes.png', 89px, 69px);
+          background-repeat: no-repeat;
+          height: 69px;
+          width: 89px;
           margin: 0 auto;
           display: block;
           margin-bottom: 20px;
@@ -233,14 +234,16 @@
       width: 50%;
       float: right;
       background-color: #ebebeb;
+      height: 448px;
       .container {
-        padding: 100px 0 100px 50px;
+        padding: 70px 0 100px 50px;
         width: 60%;
         float: left;
         .quote-icon {
-          height: 100px;
-          width: 100px;
-          background-color: #000000;
+          .at2x('/images/img_quotes.png', 89px, 69px);
+          background-repeat: no-repeat;
+          height: 69px;
+          width: 89px;
           margin: 0 auto;
           display: block;
           margin-bottom: 20px;
@@ -278,8 +281,10 @@
   }
   .photo-separator {
     .clearfix ();
+    .at2x('/images/img_comfort_separator.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100%;
-    background-color: #000000;
     height: 170px;
   }
 
