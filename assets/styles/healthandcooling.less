@@ -14,6 +14,13 @@
   .hero {
     .hero ();
     background-color: #f6f6f6;
+    .hero-mattress {
+      display: block;
+      margin: 0 auto;
+      top: -125px;
+      position: relative;
+      width: 785px;
+    }
     .container {
       max-width: 1200px;
       width: 80%;
@@ -31,7 +38,7 @@
         position: relative;
         width: 25%;
         float: left;
-        margin: 50px 4.1% 0;
+        margin: 20px 4.1% 0;
         h3 {
           .h3 (@graytext);
           padding-bottom: 5px;
@@ -41,10 +48,11 @@
         }
         &.two {
           text-align: center;
-          padding-top: 50px;
+          padding-top: 60px;
         }
         &.three {
           text-align: left;
+          padding-top: 15px;
         }
       }
     }
@@ -55,7 +63,10 @@
   // THREE POINTS
   .three-points-section {
     .clearfix ();
-    background-color: #000000;
+    // background-color: #000000;
+    .at2x('/images/img_health_bkgd.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
     .container {
       .clearfix ();
       max-width: 1200px;
@@ -69,13 +80,13 @@
       .plus-section {
         width: 40%;
         margin: 0 auto;
-        top: 80px;
+        top: 115px;
         position: relative;
         .plus {
+          .at2x('/images/icon_plus_white.png', 50%, 50%);
           height: 50px;
           width: 50px;
           display: block;
-          background-color: @white;
           position: relative;
           &.one {
             float: left;
@@ -92,11 +103,20 @@
         float: left;
         padding: 0 4.16%;
         .icon {
-          height: 100px;
-          width: 100px;
-          background-color: @graytext;
-          margin: 10px auto 50px;
+          height: 170px;
+          width: 170px;
+          // background-color: @graytext;
+          margin: 10px auto 30px;
           display: block;
+          &.circulation {
+            .at2x('/images/icon_health_circulation.png', 170px, 170px);
+          }
+          &.active {
+            .at2x('/images/icon_health_active.png', 170px, 170px);
+          }
+          &.healthyspine {
+            .at2x('/images/icon_health_joints.png', 170px, 170px);
+          }
         }
         h3 {
           .h3 (@white);
@@ -106,6 +126,8 @@
         p {
           text-align: center;
           color: @white;
+          font-size: .85em;
+          line-height: 1.6;
         }
         .button {
           margin: 30px 0;
@@ -132,7 +154,9 @@
   .two-columns {
     .clearfix ();
     .left {
-      background-color: #000000;
+      .at2x('/images/img_health_gel.png');
+      background-size: 100%;
+      // background-color: #000000;
       display: block;
       float: left;
       width: 50%;
@@ -149,14 +173,15 @@
           padding-bottom: 40px;
         }
         .item {
+          padding-bottom: 30px;
           h3 {
             .h3 (@graytext);
             padding-bottom: 10px;
           }
           p {
-            padding-bottom: 30px;
             color: @graytext;
             line-height: 1.5;
+            font-size: .85em;
             &:last-child {
               padding-bottom: 0px;
             }
