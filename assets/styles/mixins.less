@@ -229,14 +229,39 @@ body {
             padding-left: 5px;
         }
         .icon-row {
-            width: 210px; // icon width plus margin
+            width: 350px; // icon width plus margin
             margin: 0 auto;
-            div {
-                height: 50px;
-                width: 50px;
-                background-color: @graytext;
+            padding-top: 10px;
+            a {
+                height: 30px;
+                width: 30px;
+                background-repeat: no-repeat;
                 float: left;
                 margin: 10px; // this margin
+                .linkedin {
+                    .at2x('/images/icon_footer_linkedin.png');
+                }
+                .youtube {
+                    .at2x('/images/icon_footer_tube.png');
+                }
+                .gplus {
+                    .at2x('/images/icon_footer_plus.png');
+                }
+                .twitter {
+                    .at2x('/images/icon_footer_twitter.png');
+                }
+                .facebook {
+                    .at2x('/images/icon_footer_facebook.png');
+                }
+                .instagram {
+                    .at2x('/images/icon_footer_instagram.png');
+                }
+                .pinterest {
+                    .at2x('/images/icon_footer_pinterest');
+                }
+                :hover {
+                    opacity: .7;
+                }
             }
         }
     }
