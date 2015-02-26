@@ -35,10 +35,10 @@
         float: right;
         .stars {
           height: 30px;
-          width: 150px;
+          width: 215px;
           display: block;
           float: right;
-          background-color: #000000;
+          // background-color: #000000;
           margin-top: 50px;
         }
       }
@@ -50,7 +50,8 @@
   // CALL TO ACTION
   .call-to-action {
     .clearfix ();
-    background-color: #000000;
+    .fortyfive-trial ();
+    // background-color: #000000;
     .container {
       max-width: 1000px;
       width: 50%;
@@ -68,6 +69,12 @@
         color: @white;
       }
     }
+  }
+  .photo-separator {
+    background-size: 100%;
+    .at2x('/images/img_comfort_separator.png');
+    height: 200px;
+    background-repeat: no-repeat;
   }
 
 
@@ -92,6 +99,8 @@
       }
       p {
         text-align: center;
+        font-size: .85em;
+        line-height: 1.6;
         &.bold {
           font-weight: 600;
           padding-top: 20px;
@@ -99,10 +108,15 @@
       }
       .stars {
         height: 30px;
-        width: 300px;
+        width: 215px;
         display: block;
         margin: 0 auto;
-        background-color: #000000;
+      }
+      .two-stars {
+        height: 30px;
+        width: 215px;
+        display: block;
+        margin: 0 auto;  
       }
       &.one, &.three {
         .left {
