@@ -44,6 +44,7 @@ body {
    // page styles for everybody
 }
 
+
 .h1 (@color) {
     font-size: 2.5em;
     line-height: 1.1;
@@ -66,6 +67,34 @@ body {
     color: @color;
     // font-family: "ff-tisa-web-pro, serif";
     font-family: "cardo, serif";
+}
+
+// SHOP MIXINS
+.shop-container () {
+    max-width: 1000px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.shop-button () {
+    height: 120px;
+    display: block;
+    border-radius: 10px;
+    background-color: @white;
+    border: 1px solid #cccccc;
+    .transition (background-color);
+    &:hover {
+        .transition (background-color);
+        cursor: pointer;
+        background-color: @lightblue;
+        p {
+            color: @white;
+        }
+    }
+    p {
+        text-align: center;
+        .vertical-align ();
+    }
 }
 
 

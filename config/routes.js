@@ -66,6 +66,10 @@ module.exports.routes = {
     view: 'contact'
   },
 
+  '/checkout': {
+    view: 'checkout'
+  },
+
 
 
 
