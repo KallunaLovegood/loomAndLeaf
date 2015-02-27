@@ -185,6 +185,8 @@ body {
                         .phone-icon {
                             display: inline-block;
                             padding-right: 10px;
+                            height: 17px;
+                            width: 13px;
                         }
                     }
                 }
@@ -230,13 +232,23 @@ body {
                         .cart-icon {
                             display: inline-block;
                             padding-right: 10px;
+                            height: 16px;
+                            width: 17px;
                         }
                     }
                 }
             }
         } //lower
     }
+
+    @media screen and (max-width: 413px) {
+        display: none;
+    }
 }
+
+
+
+
 
 
 // FOOTER
@@ -300,6 +312,9 @@ body {
 
 // HERO SECTION
 .hero () {
-    height: 670px;
-    margin: 0 auto;
+    @media (min-width: 1024px) {
+        height: 670px;
+        // height: 20%;
+        margin: 0 auto;
+    }
 }

@@ -5,6 +5,9 @@
   .navigation {
     .navigation ();
   }
+  .mobile-navigation {
+    display: none;
+  }
   .ashamed-nav {
     height: 122px;
   }
@@ -13,7 +16,8 @@
   // HERO SECTION
   .hero {
     .hero ();
-    .at2x('/images/hero_comfort.png');
+    .at2x('/images/hero_comfort.png', auto, 900px);
+    .clearfix ();
     background-size: 100%;
     .container {
       padding: 150px 100px 0;
@@ -282,7 +286,7 @@
   }
   .photo-separator {
     .clearfix ();
-    .at2x('/images/img_comfort_separator.png');
+    .at2x('/images/img_comfort_separator.png', auto 250px);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;

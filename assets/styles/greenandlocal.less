@@ -6,6 +6,9 @@
   .navigation {
     .navigation ();
   }
+  .mobile-navigation {
+    display: none;
+  }
   .ashamed-nav {
     height: 122px;
   }
@@ -15,7 +18,7 @@
   .hero {
     .hero ();
     // background-color: #000000;
-    .at2x('/images/hero_green.png');
+    .at2x('/images/hero_green.png', auto, 862px);
     background-size: 100%;
     background-repeat: no-repeat;
     .container {
@@ -73,7 +76,7 @@
   .plant-based-foam {
     // position: relative;
     .container {
-      .at2x('/images/img_dottedline.png', 1308px, 720px);
+      .at2x('/images/img_dottedline.png', 720px, 1308px);
       background-position: 50% 170px;
       background-size: 71%;
       position: relative;
@@ -81,6 +84,7 @@
       max-width: 900px;
       width: 70%;
       margin: 100px auto;
+      // height: 1500px;
       .dottedline {
         display: block;
         margin: 0 auto;
@@ -116,7 +120,7 @@
           padding: 100px 0 0 50px;
           .image {
             float: right;
-            .at2x('/images/img_green_one.png')
+            .at2x('/images/img_green_one.png', 306px, 306px);
           }
           .content {
             float: left;
@@ -140,7 +144,7 @@
             padding-bottom: 140px;
             padding-top: 0;
             .image {
-              .at2x('/images/img_green_three.png');
+              .at2x('/images/img_green_three.png', 306px, 306px);
             }
           }
         }
@@ -148,7 +152,7 @@
           padding: 40px 50px 50px 0;
           .image {
             float: left;
-            .at2x('/images/img_green_two.png');
+            .at2x('/images/img_green_two.png', 306px, 306px);
           }
           .content {
             float: right;
@@ -242,7 +246,7 @@
   // AMERICAN WAY (45 DAY TRIAL STYLES)
   .american-section {
     .clearfix ();
-    .at2x('/images/img_green_american.png');
+    .at2x('/images/img_green_american.png', auto, 680px);
     background-repeat: no-repeat;
     background-size: 100%;
     .container {

@@ -5,6 +5,9 @@
   .navigation {
     .navigation ();
   }
+  .mobile-navigation {
+    display: none;
+  }
   .ashamed-nav {
     height: 122px;
   }
@@ -18,7 +21,7 @@
       max-width: 1200px;
       width: 100%;
       margin: 0 auto;
-      padding: 70px 0;
+      padding: 70px 0 0;
       h1 {
         .h1 (@graytext);
         text-align: center;
@@ -248,7 +251,7 @@
       p {
         color: @graytext;
         text-align: center;
-        padding: 20px 0 50px;
+        padding: 20px 0 20px;
       }
     }
     .plus {
@@ -263,11 +266,12 @@
     .left {
       float: left;
       background-color: #ebebeb;
+      height: 700px;
       .container {
         float: right;
         padding: 50px 50px 50px 0;
         .photo-left {
-          .at2x('/images/img_mattress_cover.png');
+          .at2x('/images/img_mattress_cover.png', 306px, 306px);
           width: 306px;
           height: 306px;
           background-repeat: no-repeat;
@@ -277,11 +281,12 @@
     .right {
       float: right;
       background-color: #f8f8f8;
+      height: 700px;
       .container {
         float: left;
         padding: 50px 0 50px 50px;
         .photo-right {
-          .at2x('/images/img_mattress_foam.png');
+          .at2x('/images/img_mattress_foam.png', 306px, 306px);
           width: 306px;
           height: 306px;
           background-repeat: no-repeat;
