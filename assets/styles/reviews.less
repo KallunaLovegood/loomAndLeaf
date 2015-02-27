@@ -214,6 +214,11 @@
 
 
 
+  @media screen and (max-width: 1200px) {
+
+  }
+
+
 
 
 
@@ -274,12 +279,50 @@
     // REVIEWS
     .reviews {
       .row {
+        &.one {
+          .right {
+            .container {
+              float: none;
+              margin: 0 auto;
+            }
+          }
+          .left {
+            .container {
+              float: none;
+              margin: 0 auto;
+            }
+          }
+        }
         &.two {
           .right {
             background-color: #ebebeb;
+            .container {
+              float: none;
+              margin: 0 auto;
+            }
+            // float: none;
           }
           .left {
             background-color: @white;
+            // float: none;
+            .container {
+              float: none;
+              margin: 0 auto;
+            }
+          }
+        }
+        &.three {
+          .right {
+            .container {
+              float: none;
+              margin: 0 auto;
+            }
+          }
+          .left {
+            .container {
+              float: none;
+              margin: 0 auto;
+            }
           }
         }
         .left, .right {
