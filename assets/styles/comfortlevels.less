@@ -170,9 +170,14 @@
         .h2 (@white);
         text-align: center;
       }
-      .position-image {
-        display: block;
-        margin: 30px auto;
+      .img-container {
+        width: 625px;
+        height: 113px;
+        .position-image {
+          display: block;
+          margin: 30px auto;
+          width: 100%;
+        }
       }
       p {
         color: @white;
@@ -334,6 +339,181 @@
   .footer {
     .footer ();
   }
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 413px) {
+    .hero {
+      background-size: auto;
+      width: 100%;
+      .container {
+        width: 90%;
+        padding: 100px 0;
+        h1 {
+          font-size: 2em;
+        }
+        p {
+          font-size: .85em;
+        }
+        .button-row {
+          margin-top: 20px;
+          .button {
+            &.left {
+              a {
+                padding: 20px 20px;
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+            &.right {
+              a {
+                padding: 20px 35px;
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+      .firmscale {
+        display: none;
+      }
+    }
+
+
+
+    // SLEEP POSITIONS
+    .sleep-positions {
+      .container {
+        width: 90%;
+        .img-container {
+          width: 100%;
+        }
+        p {
+          font-size: .85em;
+          line-height: 1.6;
+        }
+      }
+    }
+
+
+
+    // FIRM COMPARISON
+    .firm-comparison {
+      .left {
+        width: 100%;
+        height: 550px;
+        .container {
+          float: none;
+          margin: 0 auto;
+          padding: 100px 0;
+          .button {
+            a {
+              padding: 20px 30px;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        width: 100%;
+        height: 550px;
+        .container {
+          float: none;
+          margin: 0 auto;
+          padding: 100px 0;
+          .button {
+            a {
+              padding: 20px 30px;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
+    // PHOTO SEPARATOR
+    .photo-separator {
+      height: 50px;
+    }
+
+
+
+    // FIRM COMPARISON QUOTES
+    .firm-comparison {
+      .left {
+        .container {
+          width: 90%;
+          p {
+            font-size: .85em;
+            line-height: 1.6;
+          }
+        }
+      }
+      .right {
+        .container {
+          width: 90%;
+          p {
+            font-size: .85em;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+
+
+
+
+    // FORTYFIVE TRIAL
+    .fortyfive-trial {
+      .container {
+        width: 80%;
+        padding: 100px 20px 50px;
+        h2 {
+          text-align: center;
+          font-size: 2em;
+        }
+        p {
+          font-size: .9em;
+          line-height: 2;
+        }
+        .button {
+          margin-top: 30px;
+          a {
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+
+    // FOOTER
+    .footer {
+      display: none;
+    }
+
+
+  } // media
 
 
 
