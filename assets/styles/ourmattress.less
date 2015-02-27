@@ -35,6 +35,9 @@
         margin: 84px 0 0;
         .at2x('/images/hero_mattress.png', 944px, 473px);
         background-repeat: no-repeat;
+        .mobile {
+          display: none;
+        }
       }
       .right {
         top: 140px;
@@ -353,6 +356,201 @@
   .footer {
     .footer ();
   }
+
+
+
+  @media screen and (max-width: 413px) {
+    .hero {
+      .clearfix ();
+      height: auto;
+      .container {
+        .clearfix ();
+        h1 {
+          font-size: 2em;
+          padding: 0 20px;
+        }
+        .left {
+          .clearfix ();
+          background-image: none;
+          height: auto;
+          margin-top: 30px;
+          .mobile {
+            display: block;
+            float: right;
+            height: 180px;
+            width: auto;
+          }
+        }
+        .right {
+          top: 0;
+          width: 100%;
+          position: relative;
+          margin-bottom: 50px;
+          .point {
+            h3 {
+              font-size: 1.3em;
+            }
+            p {
+              font-size: .9em;
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+    }
+
+
+    // CALL TO ACTION
+    .call-to-action {
+      p {
+        font-size: .85em;
+      }
+      .button-row {
+        margin-top: 20px;
+        .button {
+          &.left {
+            a {
+              padding: 20px 20px;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+          &.right {
+            a {
+              padding: 20px 30px;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
+    // TWO POINTS
+    .two-points {
+      .container {
+        .clearfix ();
+        width: 90%;
+        .left {
+          width: 100%;
+          margin-bottom: 0px;
+          .american-icon {
+            margin-top: 30px;
+          }
+          h3 {
+            font-size: 1.3em;
+          }
+          p {
+            font-size: .85em;
+            line-height: 1.6;
+          }
+        }
+        .right {
+          width: 100%;
+          margin-bottom: 0px;
+          .sleep-icon {
+            margin: 30px 0 0 30px;
+          }
+          h3 {
+            font-size: 1.3em;
+            margin-left: 50px;
+          }
+          p {
+            font-size: .85em;
+            line-height: 1.6;
+            margin-left: 50px;
+          }
+        }
+      }
+    }
+
+
+
+    // CHART
+    .chart {
+      background-size: auto;
+      .container {
+        width: 100%;
+        table {
+          width: 100%;
+        }
+      }
+    }
+
+
+
+    // COMPARE SECTION
+    .compare-section {
+      .clearfix ();
+      .container {
+        width: 90%;
+        p {
+          font-size: .85em;
+          line-height: 1.6;
+        }
+      }
+      .plus {
+        display: none;
+      }
+      .left {
+        width: 100%;
+        .container {
+          float: none;
+          width: 80%;
+          padding: 50px 0;
+          margin: 0 auto;
+        }
+      }
+      .right {
+        width: 100%;
+        .container {
+          float: none;
+          width: 80%;
+          padding: 50px 0;
+          margin: 0 auto;
+        }
+      }
+    }
+
+
+
+
+    // FORTYFIVE TRIAL
+    .fortyfive-trial {
+      .container {
+        padding: 70px 0;
+        width: 80%;
+        .button {
+          a {
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+
+
+
+
+
+    // FOOTER
+    .footer {
+      display: none;
+    }
+
+
+
+
+  } //media
 
 
 
