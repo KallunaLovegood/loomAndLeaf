@@ -173,6 +173,7 @@
       .img-container {
         width: 625px;
         height: 113px;
+        margin: 30px auto;
         .position-image {
           display: block;
           margin: 30px auto;
@@ -344,7 +345,27 @@
 
 
 
+  @media screen and (max-width: 1200px) {
+    .hero {
+      background-size: auto;
+    }
 
+    .sleep-positions {
+      .container {
+        h2 {
+          margin-bottom: 20px;
+        }
+        .img-container {
+          width: auto;
+          margin: 30px auto;
+          .position-image {
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
 
 
 
@@ -395,7 +416,9 @@
     .sleep-positions {
       .container {
         width: 90%;
+        display: block;
         .img-container {
+          margin: 30px auto;
           width: 100%;
         }
         p {
