@@ -359,6 +359,16 @@
 
 
 
+  @media screen and (max-width: 1200px) {
+    // fits background image to size of div
+    .chart {
+      height: 529px;
+      background-size: auto;
+    }
+  }
+
+
+
   @media screen and (max-width: 1000px) {
     .hero {
       .clearfix ();
@@ -376,14 +386,17 @@
           margin-top: 30px;
           .mobile {
             display: block;
-            float: right;
+            float: none;
+            margin: 0 auto;
             height: 180px;
             width: auto;
           }
         }
         .right {
           top: 0;
-          width: 100%;
+          width: 90%;
+          display: block;
+          margin: 0 auto;
           position: relative;
           margin-bottom: 50px;
           .point {
