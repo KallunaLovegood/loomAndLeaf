@@ -16,16 +16,18 @@
 
   // CONTENT
   .content {
+    .clearfix ();
+    h1 {
+      .h1 (@graytext);
+      padding: 100px 0 100px;
+      text-align: center;
+    }
     .container {
-      max-width: 700px;
+      max-width: 340px;
       width: 65%;
       margin: 0 auto;
-      h1 {
-        .h1 (@graytext);
-        padding: 100px 0 100px;
-        text-align: center;
-      }
       form {
+        .clearfix ();
         width: 65%;
         margin: 0 auto;
         padding-bottom: 100px;
@@ -84,24 +86,26 @@
 
 
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1300px) {
     .content {
       .container {
-        width: 90%;
+        .clearfix ();
+        width: 100%;
         form {
           .clearfix ();
           width: 100%;
           label {
-            display: table;
+            // display: table;
             .clearfix ();
             input {
-              display: table-cell;
-              width: 107%;
+              width: 300px;
+              // display: table-cell;
+              // width: 107%;
               padding: 20px;
             }
             textarea {
-              display: table-cell;
-              width: 88%;
+              // display: table-cell;
+              width: 94%;
             }
           }
           .button {
