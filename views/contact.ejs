@@ -55,22 +55,25 @@
   <!-- CONTENT -->
   <div class="content">
     <div class="container">
-      <form>
+      <form id="questionForm">
         <h1>Want to submit a question?</h1>
+        <label class="hidden">
+            <input type="text" id="firstname" name="firstname" placeholder="Email or Phone">
+          </label>
           <label>
             <span>Your Full Name:</span>
             <!-- <label for="first-name">First Name:*</label> -->
-            <input type="text" id="first-name" name="user_fullname" placeholder="Your full name">
+            <input required type="text" id="contact_name" name="contact_name" placeholder="Your full name">
           </label>
           <label>
             <span>Email or Phone:</span>
-            <input type="text" id="last-name" name="user_lastname" placeholder="Email or Phone">
+            <input required type="text" id="contact_emailphone" name="contact_emailphone" placeholder="Email or Phone">
           </label>
           <label>
             <span>Your Message or Question:</span>
-            <textarea type="text" id="address" name="user_address" placeholder="Let us know your message or question"></textarea>
+            <textarea type="text" id="contact_msg" name="contact_msg" placeholder="Let us know your message or question"></textarea>
           </label>
-        <div class="button"><a href="#">Submit</a></div>
+        <input class="questionForm-button" type="submit" value="Submit">
       </form>
     </div>
   </div>
