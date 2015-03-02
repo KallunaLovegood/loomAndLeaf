@@ -14,11 +14,13 @@
     .container {
       padding: 100px 0;
       h1 {
+        .fadein-animation (1s);
         .h1 (@white);
         text-align: center;
         margin-bottom: 50px;
       }
       .pathway {
+        .fadein-animation (5s);
         // background-color: @white;
         // height: 400px;
         // width: 800px;
@@ -34,6 +36,7 @@
   .two-columns {
     .clearfix ();
     .left {
+      .fadein-animation (5s);
       .at2x ('/images/img_greenlocal_photo.png');
       // background-color: #000000;
       background-size: 100%;
@@ -52,10 +55,12 @@
         max-width: 500px;
         padding: 100px 100px 36px;
         h3 {
+          .fadein-animation (5s);
           .h3 (@graytext);
           padding-bottom: 30px;
         }
         p {
+          .fadein-animation (7s);
           color: @graytext;
           line-height: 1.5;
         }
