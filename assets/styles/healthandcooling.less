@@ -8,6 +8,7 @@
     .hero ();
     background-color: #f6f6f6;
     .hero-mattress {
+      .fadein-animation (5s);
       display: block;
       margin: 0 auto;
       top: -125px;
@@ -20,10 +21,12 @@
       margin: 0 auto;
       padding: 100px 0;
       h1 {
+        .fadein-animation (1s);
         .h1 (@graytext);
         text-align: center;
       }
       .subheader {
+        .fadein-animation (3s);
         text-align: center;
         color: @graytext;
       }
@@ -37,13 +40,16 @@
           padding-bottom: 5px;
         }
         &.one {
+          .fadein-animation (2s);
           text-align: right;
         }
         &.two {
+          .fadein-animation (4s);
           text-align: center;
           padding-top: 60px;
         }
         &.three {
+          .fadein-animation (6s);
           text-align: left;
           padding-top: 15px;
         }
@@ -67,6 +73,7 @@
       margin: 0 auto;
       padding: 100px 0;
       h2 {
+        .fadein-animation (5s);
         .h2 (@white);
         text-align: center;
       }
@@ -76,6 +83,7 @@
         top: 115px;
         position: relative;
         .plus {
+          .fadein-animation (7s);
           .at2x('/images/icon_plus_white.png', 50px, 50px);
           background-repeat: no-repeat;
           height: 50px;
@@ -97,6 +105,7 @@
         float: left;
         padding: 0 4.16%;
         .icon {
+          .fadein-animation (9s);
           height: 170px;
           width: 170px;
           // background-color: @graytext;
@@ -113,6 +122,7 @@
           }
         }
         h3 {
+          .fadein-animation (9s);
           .h3 (@white);
           padding-bottom: 10px;
           text-align: center;
