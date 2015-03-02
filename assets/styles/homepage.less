@@ -1,15 +1,7 @@
 // HOME PAGE
 .home {
-  // NAVIGATION
-  .navigation {
-    .navigation();
-  }
-  .mobile-navigation {
-    display: none;
-  }
-  .ashamed-nav {
-    height: 122px;
-  }
+  .navigation();
+
 
   // HERO SECTION
   .hero {
@@ -31,6 +23,7 @@
       width: 80%;
       margin: 0 auto;
       .call-to-action {
+        .fadein-animation (1s);
         max-width: 500px;
         padding: 20px;
         background-color: rgba(255, 255, 255, .8);
@@ -42,13 +35,16 @@
           .h1(@graytext);
           float: left;
           padding-bottom: 10px;
+          .fadein-animation (3s);
         }
         p {
           margin: 20px 0;
           color: @graytext;
+          .fadein-animation (5s);
         }
         .button {
           margin: 10px 0;
+          .fadein-animation (7s);
           a {
             .transition (opacity);
             color: @white;
@@ -89,6 +85,7 @@
 
   // REVIEW SECTION
   .review {
+    .fadein-animation (3s);
     .container {
       max-width: 1200px;
       width: 50%;
@@ -104,13 +101,15 @@
       span {
         color: @salmon;
       }
-      p {
-        text-align: center;
-      }
       h2 {
+        .fadein-animation (5s);
         .h2 (@graytext);
         text-align: center;
         margin: 20px 0;
+      }
+      p {
+        .fadein-animation (7s);
+        text-align: center;
       }
       // OLD STYLES
       // .star-icon {
@@ -121,6 +120,7 @@
       //   margin-bottom: 100px;
       // }
       .company-icons {
+        .fadein-animation (7s);
         // .at2x('/images/img_logos.png', 608px, 50px);
         // background-repeat: no-repeat;
         height: 50px;

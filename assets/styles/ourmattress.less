@@ -1,16 +1,7 @@
 // OUR MATTRESS
 .ourmattress {
-  
-  // NAVIGATION
-  .navigation {
-    .navigation ();
-  }
-  .mobile-navigation {
-    display: none;
-  }
-  .ashamed-nav {
-    height: 122px;
-  }
+  .navigation();  
+
 
   // HERO SECTION
   .hero {
@@ -23,6 +14,7 @@
       margin: 0 auto;
       padding: 70px 0 0;
       h1 {
+        .fadein-animation (2s);
         .h1 (@graytext);
         text-align: center;
       }
@@ -51,6 +43,18 @@
           padding-left: 20px;
           margin-bottom: 30px;
           width: 80%;
+          &.one {
+            .fadein-animation (1s);
+          }
+          &.two {
+            .fadein-animation (3s);
+          }
+          &.three {
+            .fadein-animation (5s);
+          }
+          &.four {
+            .fadein-animation (7s);
+          }
           .number {
             display: block;
             float: left;
@@ -385,6 +389,7 @@
           height: auto;
           margin-top: 30px;
           .mobile {
+            .fadein-animation (2s);
             display: block;
             float: none;
             margin: 0 auto;
