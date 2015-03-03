@@ -59,23 +59,20 @@
     <h1>Want to submit a question?</h1>
     <div class="container">
       <form id="questionForm">
-        <label class="hidden">
-            <input type="text" id="firstname" name="firstname" placeholder="Email or Phone">
-          </label>
-          <label>
-            <span>Your Full Name:</span>
-            <!-- <label for="first-name">First Name:*</label> -->
-            <input required type="text" id="contact_name" name="contact_name" placeholder="Your full name">
-          </label>
-          <label>
-            <span>Email or Phone:</span>
-            <input required type="text" id="contact_emailphone" name="contact_emailphone" placeholder="Email or Phone">
-          </label>
-          <label>
-            <span>Your Message or Question:</span>
-            <textarea type="text" id="contact_msg" name="contact_msg" placeholder="Let us know your message or question"></textarea>
-          </label>
-        <input class="questionForm-button" type="submit" value="Submit">
+        <input type="hidden" id="firstname" name="firstname">
+        <div class="field">
+          <label for="contact_name">Your Full Name*:</label>
+          <input required type="text" id="contact_name" name="contact_name" placeholder="Your full name" />
+        </div>
+        <div class="field">
+          <label for="contact_emailphone">Email or Phone*:</label>
+          <input required type="text" id="contact_emailphone" name="contact_emailphone" placeholder="Email or Phone" />
+        </div>
+        <div class="field">
+          <label for="contact_msg">Your Message or Question*:</label>
+          <input required type="text" id="contact_msg" name="contact_msg" placeholder="Let us know your message" />
+        </div>
+        <input class="questionForm-button" type="submit" value="Submit" />
       </form>
     </div>
   </div>
