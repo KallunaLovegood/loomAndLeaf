@@ -73,28 +73,48 @@
         width: 80%;
         margin: 0 auto;
         padding-top: 100px;
-        .relaxedfirm {
+        h3 {
+          .h3 (@graytext);
+          padding-bottom: 30px;
+          text-align: center;
+        }
+        #relaxedfirm-snippet {
           display: none;
           h3 {
-            .fadein-animation (5s);
-            .h3 (@graytext);
+            .fadein-animation (500ms);
+            .h3 (#2b4156);
+            padding-bottom: 5px;
             text-align: center;
           }
+          p {
+            .fadein-animation (500ms);
+            font-size: .85em;
+            color: #2b4156;
+          }
         }
-        .firm {
-          // display: none;
+        #firm-snippet {
+          display: none;
           h3 {
-            .fadein-animation (5s);
-            .h3 (@graytext);
+            .fadein-animation (500ms);
+            .h3 (@lightblue);
+            padding-bottom: 5px;
             text-align: center;
+          }
+          p {
+            .fadein-animation (500ms);
+            font-size: .85em;
+            color: @lightblue;
           }
         }
         .firmscale-container {
           .clearfix ();
           width: 595px;
           margin: 30px auto;
+          &.non-hover {
+            padding-top: 50px;
+          }
           ul {
-            .fadein-animation (7s);
+            .fadein-animation (3s);
             margin: 0 auto;
             margin-left: 20px;
             li {
