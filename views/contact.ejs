@@ -58,10 +58,13 @@
   <div class="content">
     <h1>Want to submit a question?</h1>
     <div class="container">
+      <!-- give the form an id -->
       <form id="questionForm">
         <input type="hidden" id="firstname" name="firstname">
+        <!-- surround each input and label in a div -->
         <div class="field">
           <label for="contact_name">Your Full Name*:</label>
+          <!-- can add in "required" and make the id and name the same for easier reference -->
           <input required type="text" id="contact_name" name="contact_name" placeholder="Your full name" />
         </div>
         <div class="field">
