@@ -22,13 +22,11 @@ $(function () {
       data: payload,
       success: function (data, status) {
         console.log('SUCCESS', data, status);
-        // FLASH MESSAGE: awesome!
-        alert ("woohoo!");
+        $(".success-message").show();
       },
       error: function (jqXHR, status) {
         console.log('ERROR', status);
-        // FLASH MESSAGE: WOMP WOMP
-        alert ("nope!");
+        $(".error-message").show();
         return false;
       }
     });
@@ -60,14 +58,14 @@ $(function () {
       data: payload,
       success: function (data, status) {
         console.log('SUCCESS', data, status);
-        // flash message: awesome
-        alert ("woohoo!");
+        $(".success-message").show();
+        // alert ("woohoo!");
       },
       error: function (jqXHR, status) {
         console.log('ERROR', status);
-        // flash message: nope
-        // return false;
-        alert ("nope");
+        $(".error-message").show();
+        return false;
+        // alert ("nope");
       }
     });
   }

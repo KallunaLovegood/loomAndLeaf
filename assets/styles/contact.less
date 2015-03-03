@@ -17,6 +17,40 @@
       max-width: 340px;
       width: 65%;
       margin: 0 auto;
+      .success-message {
+        display: none;
+        background-color: rgb(92, 184, 135);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: -30px;
+        h3 {
+          .h3 (@white);
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          font-size: .8em;
+          color: @white;
+        }
+      }
+      .error-message {
+        display: none;
+        background-color: @salmon;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: -30px;
+        h3 {
+          .h3 (@white);
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          font-size: .8em;
+          color: @white;
+        }
+      }
       form {
         .fadein-animation (5s);
         .clearfix ();

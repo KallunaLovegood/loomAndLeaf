@@ -76,6 +76,40 @@
         width: 300px;
         margin: 20px 0;
       }
+      .success-message {
+        display: none;
+        background-color: rgb(92, 184, 135);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: -30px;
+        h3 {
+          .h3 (@white);
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          font-size: .8em;
+          color: @white;
+        }
+      }
+      .error-message {
+        display: none;
+        background-color: @salmon;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: -30px;
+        h3 {
+          .h3 (@white);
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          font-size: .8em;
+          color: @white;
+        }
+      }
       .button {
         // margin: 100px 0 0;
         text-align: center;
