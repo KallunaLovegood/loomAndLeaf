@@ -8,6 +8,10 @@
     .hero ();
     background-color: #f6f6f6;
     position: relative;
+    background-image: url('/images/hero_health.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 100%;
     // .clearfix ();
     .hero-mattress {
       // .clearfix ();
@@ -246,13 +250,19 @@
   }
 
 
-
+@media screen and (min-width: 1500px) {
+  .hero {
+    background-size: 30%;
+  }
+}
 
 
   @media screen and (max-width: 1200px) {
     .hero {
+      // background-size: 30%;
       .clearfix ();
       .container {
+        padding-bottom: 200px;
         .hero-mattress {
           width: 70%;
           top: -55px;

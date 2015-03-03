@@ -97,7 +97,7 @@
               .transition (opacity);
               cursor: pointer;
             }
-          }
+          } //questionform-button
         }
         textarea {
           height: 100px;
@@ -129,59 +129,40 @@
         width: 300px;
         form {
           .clearfix ();
-          // width: 100%;
-          // input {
-          //   width: 300px;
-          //   // display: table-cell;
-          //   // width: 107%;
-          //   padding: 20px;
-          // }
-          // textarea {
-          //   // display: table-cell;
-          //   width: 94%;
-          // }
-          // .button {
-          //   a {
-          //     padding: 20px 100px;
-          //     &:hover {
-          //       opacity: 1;
-          //     }
-          //   }
-          // }
-        label {
-          float: left;
-          display: inline-block;
-          padding-bottom: 10px;
-        }
-        input, textarea {
-          display: inline-block;
-          float: left;
-          padding: 20px 10px;
-          border-radius: 10px;
-          margin-bottom: 30px;
-          width: 300px;
-          border: 1px solid #aaaaaa;
-          &:focus {
-            border: 1px solid @lightblue;
+          label {
+            float: left;
+            display: inline-block;
+            padding-bottom: 10px;
           }
-          &.questionForm-button {
-            text-align: center;
-            float: none;
-            display: block;
-            margin-top: 50px;
+          input, textarea {
+            display: inline-block;
+            float: left;
+            padding: 20px 10px;
+            border-radius: 10px;
+            margin-bottom: 30px;
             width: 300px;
-            margin: 0 auto 50px;
-            padding: 20px 0;
-            display: block;
-            background-color: @salmon;
-            color: @white;
-            border: none;
-            font-size: 1em;
-            &:hover {
-              opacity: 1;
+            border: 1px solid #aaaaaa;
+            &:focus {
+              border: 1px solid @lightblue;
             }
-          }
-        }
+            &.questionForm-button {
+              text-align: center;
+              float: none;
+              display: block;
+              margin-top: 50px;
+              width: 300px;
+              margin: 0 auto 50px;
+              padding: 20px 0;
+              display: block;
+              background-color: @salmon;
+              color: @white;
+              border: none;
+              font-size: 1em;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          } //input, textarea
         }
       }
     }  
