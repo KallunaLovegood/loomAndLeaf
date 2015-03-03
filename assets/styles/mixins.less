@@ -36,6 +36,15 @@ body {
 // animation: name duration timing-function delay iteration-count direction fill-mode play-state;
 
 //TRANSITION
+.custom-transition (@transition, @delay) {
+    -webkit-transition: @transition @delay;  
+    -moz-transition:    @transition @delay;
+    -ms-transition:     @transition @delay; 
+    -o-transition:      @transition @delay;
+}
+
+
+//TRANSITION
 .transition (@transition) {
     -webkit-transition: @transition 500ms;  
     -moz-transition:    @transition 500ms;
@@ -397,6 +406,11 @@ body {
                 background-repeat: no-repeat;
                 float: left;
                 margin: 10px; // this margin
+                .transition (opacity);
+                &:hover {
+                    opacity: .6;
+                    .transition (opacity);
+                }
                 .linkedin {
                     .at2x('/images/icon_footer_linkedin.png');
                 }

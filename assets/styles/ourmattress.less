@@ -27,6 +27,12 @@
         margin: 84px 0 0;
         .at2x('/images/hero_mattress.png', 944px, 473px);
         background-repeat: no-repeat;
+        .custom-transition (margin-top, 1s);
+        &:hover {
+          margin-top: 54px;
+          .custom-transition (margin-top, 1s);
+          cursor: pointer;
+        }
         .mobile {
           display: none;
         }
