@@ -65,20 +65,42 @@
         float: left;
       }
       label {
-        float: left;
-        display: inline-block;
-      }
-      input {
-        display: inline-block;
-        float: left;
-        padding: 10px;
-        border-radius: 10px;
-        width: 300px;
-        margin: 20px 0;
-        &:focus {
-          border: 1px solid @lightblue;
+          float: left;
+          display: inline-block;
+          padding-bottom: 10px;
         }
-      }
+        input, textarea {
+          display: inline-block;
+          float: left;
+          padding: 10px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          width: 300px;
+          border: 1px solid #aaaaaa;
+          &:focus {
+            border: 1px solid @lightblue;
+          }
+          &.brochureForm-button {
+            text-align: center;
+            float: none;
+            display: block;
+            margin-top: 50px;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px 0;
+            display: block;
+            background-color: @salmon;
+            color: @white;
+            border: none;
+            font-size: 1em;
+            .transition (opacity);
+            &:hover {
+              opacity: .6;
+              .transition (opacity);
+              cursor: pointer;
+            }
+          } //questionform-button
+        }
       .success-message {
         display: none;
         background-color: rgb(92, 184, 135);
@@ -177,13 +199,40 @@
           float: left;
           padding-left: 0px;
         }
-        .button {
-          width: 100%;
-          a {
-            padding: 20px 90px;
-            margin: 0 auto;
-          }
+        label {
+          float: left;
+          display: inline-block;
+          padding-bottom: 10px;
         }
+        input, textarea {
+          display: inline-block;
+          float: left;
+          padding: 20px 10px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          width: 300px;
+          border: 1px solid #aaaaaa;
+          &:focus {
+            border: 1px solid @lightblue;
+          }
+          &.brochureForm-button {
+            text-align: center;
+            float: none;
+            display: block;
+            margin-top: 50px;
+            width: 300px;
+            margin: 0 auto 50px;
+            padding: 20px 0;
+            display: block;
+            background-color: @salmon;
+            color: @white;
+            border: none;
+            font-size: 1em;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        } //input, textarea
       }
     }
 
