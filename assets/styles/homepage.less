@@ -25,27 +25,30 @@
       margin: 0 auto;
       .call-to-action {
         .fadein-animation (1s);
-        max-width: 500px;
+        max-width: 530px;
         padding: 20px;
         background-color: rgba(255, 255, 255, .8);
-        width: 50%;
+        width: 52%;
         position: absolute;
         top: 200px;
         left: 50px;
         h1 {
           .h1(@graytext);
+          .fadein-animation (3s);
+          font-size: 2.2em;
           float: left;
           padding-bottom: 10px;
-          .fadein-animation (3s);
         }
         p {
-          margin: 20px 0;
-          color: @graytext;
           .fadein-animation (5s);
+          margin: 0 0 20px 0;
+          float: left;
+          color: @graytext;
         }
         .button {
-          margin: 10px 0;
           .fadein-animation (7s);
+          margin: 10px 0;
+          float: left;
           a {
             .transition (opacity);
             color: @white;
@@ -99,7 +102,7 @@
       //   background-color: #000000;
       //   margin: 30px auto;
       // }
-      span {
+      span, a {
         color: @salmon;
       }
       h2 {
@@ -111,6 +114,10 @@
       p {
         .fadein-animation (7s);
         text-align: center;
+        &.second-line {
+          padding: 10px 0;
+          font-weight: 600;
+        }
       }
       // OLD STYLES
       // .star-icon {
@@ -291,16 +298,24 @@
           left: 0;
           padding: 0;
           h1 {
-            padding-top: 50px;
+            padding: 20px 0 0 20px;
             font-size: 2em;
             text-align: center;
+            &.top {
+              padding: 20px 0 0 20px;
+            }
+            &.bot {
+              padding: 0 0 0 20px;
+            }
           }
           p {
+            padding: 10px 0 0 20px;
+            margin-bottom: 0px;
             font-size: .85em;
             text-align: center;
           }
           .button {
-            margin: 10px 20px 50px;
+            margin: 0 0 20px 20px;
             a {
               display: block;
               text-align: center;
