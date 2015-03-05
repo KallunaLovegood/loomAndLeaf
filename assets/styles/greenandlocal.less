@@ -55,7 +55,7 @@
       height: 385px;
       .container {
         max-width: 500px;
-        padding: 100px 100px 36px;
+        padding: 90px 100px 36px;
         h3 {
           .fadein-animation (5s);
           .h3 (@graytext);
@@ -65,6 +65,7 @@
           .fadein-animation (7s);
           color: @graytext;
           line-height: 1.5;
+          font-size: .85em;
         }
       }
     }
@@ -234,6 +235,17 @@
           .content {
             margin-left: 70px;
             color: @white;
+            ul {
+              li {
+                font-size: .85em;
+                padding-left: 10px;
+                line-height: 1.6;
+                &.bold {
+                  font-weight: 700;
+                  padding-top: 10px;
+                }
+              }
+            }
           }
         }
       }
