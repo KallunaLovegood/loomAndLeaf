@@ -120,9 +120,6 @@
           .h3 (@graytext);
           padding-bottom: 10px;
           text-align: center;
-          &.top {
-            padding-bottom: 0px;
-          }
         }
         p {
           .fadein-animation (7s);
@@ -205,6 +202,11 @@
         &.subheader {
           .h3 (@graytext);
           width: 100%;
+        }
+        span {
+          .h3 (@graytext);
+          display: block;
+          padding-bottom: 10px;
         }
       }
       .business-model {
@@ -498,7 +500,7 @@
 
     // CHART
     .chart {
-      background-size: auto;
+      background-size: 700%;
       .container {
         width: 90%;
         table {
