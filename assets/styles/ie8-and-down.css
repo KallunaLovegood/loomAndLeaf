@@ -1,0 +1,12 @@
+/*IE 8 and lower*/
+
+.homepage, .ourmattress, .comfortlevels, .whychooseus, .greenandlocal, .healthandcooling, .ourcompany, .requestbrochure, .reviews, .contact, .checkout {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.homepage.hero.container {
+  opacity: 1;
+  background-color: #ffffff;
+}
