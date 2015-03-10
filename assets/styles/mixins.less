@@ -250,19 +250,40 @@ body {
                     }
                 }
             } //upper
+            .phone {
+                width: 100%;
+                float: right;
+                color: @graytext;
+                font-weight: 700;
+                font-size: 1em;
+                // margin: 10px 20px 10px 10px;
+                a {
+                    text-align: right;
+                    margin: 10px;
+                    img {
+                        position: relative;
+                        right: 150px;
+                        margin-top: 2px;
+                        display: block;
+                        float: right;
+                    }
+                }
+            }
             .lower {
-                height: 70px;
+                // height: 70px;
+                height: 110px;
                 .logo {
                     // height: 70px;
                     // width: 150px;
                     // background-color: #000000;
-                    margin: 15px 0 0 10px;
+                    margin: 0 0 0 10px;
                     float: left;
                     // .at2x('/images/logo.png', 165px, 41px);
                 }
                 ul {
+                    .clearfix ();
                     float: right;
-                    padding-top: 25px;
+                    padding-top: 20px;
                     a {
                         float: left;
                         margin: 6px 10px;
@@ -383,7 +404,7 @@ body {
         }
     }
     .ashamed-nav {
-        height: 122px;
+        height: 162px;
         @media screen and (max-width: 1000px) {
         display: none;
     }
