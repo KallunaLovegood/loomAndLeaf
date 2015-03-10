@@ -70,6 +70,9 @@
           width: 30%;
           float: left;
           margin: 0 4.5% 50px 0;
+          p {
+            top: 40%;
+          }
           &:last-child {
             margin-right: 0px;
           }
@@ -177,10 +180,13 @@
         margin-bottom: 10px;
       }
       input {
-        padding: 10px;
         display: block;
         margin: 0 auto 50px;
-        border-radius: 5px;
+        padding: 20px 10px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        width: 200px;
+        border: 1px solid #aaaaaa;
       }
     }
   }
@@ -242,7 +248,14 @@
         .button {
           width: 29%;
           p {
-            transform: translateY(10%);
+            transform: translateY(-100%);
+            &.description {
+              font-size: .80em;
+              transform: translateY(-50%);
+            }
+            &.no {
+              transform: translateY(-50%);  
+            }
           }
         }
       }
